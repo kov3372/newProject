@@ -1,0 +1,11 @@
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\bin\Debug\netcoreapp3.1\frequencanalysisV3.exe
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\bin\Debug\netcoreapp3.1\frequencanalysisV3.deps.json
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\bin\Debug\netcoreapp3.1\frequencanalysisV3.runtimeconfig.json
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\bin\Debug\netcoreapp3.1\frequencanalysisV3.runtimeconfig.dev.json
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\bin\Debug\netcoreapp3.1\frequencanalysisV3.dll
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\bin\Debug\netcoreapp3.1\frequencanalysisV3.pdb
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\obj\Debug\netcoreapp3.1\frequencanalysisV3.csprojAssemblyReference.cache
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\obj\Debug\netcoreapp3.1\frequencanalysisV3.AssemblyInfoInputs.cache
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\obj\Debug\netcoreapp3.1\frequencanalysisV3.AssemblyInfo.cs
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\obj\Debug\netcoreapp3.1\frequencanalysisV3.dll
+D:\newProject\newProject\frequencanalysisV3\frequencanalysisV3\obj\Debug\netcoreapp3.1\frequencanalysisV3.pdb
