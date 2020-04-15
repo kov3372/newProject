@@ -10,7 +10,7 @@ namespace frequencanalysisV3
         static void Main(string[] args)
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            string pathTableCp866 = @"c:\text\tableCp866.txt";
+            string pathTableCp866 = @"d:\newProject\newProject\text\tableCp866.txt";
             string tableCp866 = ReadТNormalTextFromFile(pathTableCp866);
             byte[] bytesCp866 = Encoding.GetEncoding(866).GetBytes(tableCp866);
 
@@ -21,7 +21,7 @@ namespace frequencanalysisV3
             }
 
 
-            string pathText = @"c:\text\win1251-koiu8u.txt";
+            string pathText = @"d:\newProject\newProject\text\win1251-cp866.txt";
             string textInCp866 = ReadТNormalTextFromFile(pathText);
             string textCp866Low = textInCp866.ToLower();
             Console.Write(textCp866Low);

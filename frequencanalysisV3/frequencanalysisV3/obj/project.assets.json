@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\newProject\\frequencanalysisV3\\frequencanalysisV3\\frequencanalysisV3.csproj",
+      "projectUniqueName": "D:\\newProject\\newProject\\frequencanalysisV3\\frequencanalysisV3\\frequencanalysisV3.csproj",
       "projectName": "frequencanalysisV3",
-      "projectPath": "D:\\newProject\\frequencanalysisV3\\frequencanalysisV3\\frequencanalysisV3.csproj",
+      "projectPath": "D:\\newProject\\newProject\\frequencanalysisV3\\frequencanalysisV3\\frequencanalysisV3.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\newProject\\frequencanalysisV3\\frequencanalysisV3\\obj\\",
+      "outputPath": "D:\\newProject\\newProject\\frequencanalysisV3\\frequencanalysisV3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
