@@ -30,7 +30,7 @@ namespace frequencanalysisV3
 
             for (int i = 0; i < bytesText.Length; i++)
             {
-                //      Console.Write(bytesText[i] + " ");
+                    Console.Write(bytesText[i] + " ");
             }
 
 
@@ -42,11 +42,11 @@ namespace frequencanalysisV3
 
             for (int i = 0; i < encodingArray.Length; i++)
             {
-                Console.WriteLine(encodingArray[i]);
+            Console.WriteLine(encodingArray[i]);
             }
 
-            string resText = GenereteTextResult(encodingArray, ukrArray);
-            Console.WriteLine(resText);
+            string resText = GenereteTextResult(bytesText,  encodingArray, ukrArray);
+          Console.WriteLine(resText);
         }
         public static string ReadТNormalTextFromFile(string pathForNormalText)
         {
@@ -90,7 +90,7 @@ namespace frequencanalysisV3
                     }
                 }
                 double Freq = ((double)count1 / (double)count2);
-                Freq = (Math.Round(Freq, 3, MidpointRounding.AwayFromZero));
+                Freq = (Math.Round(Freq, 4, MidpointRounding.AwayFromZero));
                 array[g] = new EncodingCharacterFrequency(c, Freq);
                 g++;
 
@@ -174,22 +174,35 @@ namespace frequencanalysisV3
         }
 
 
-        public static string GenereteTextResult(EncodingCharacterFrequency[] encodingArray, UkrСharacterFrequency[] ukrArray)
+        public static string GenereteTextResult(byte[] bytesText, EncodingCharacterFrequency[] encodingArray, UkrСharacterFrequency[] ukrArray)
         {
             string text = "";
+            byte prob = 32;
 
-            for (int i = 0; i < encodingArray.Length; i++)
+            foreach (byte b in bytesText)
             {
-                for (int g = 0; g < ukrArray.Length; g++)
+                for (int i = 0; i < encodingArray.Length; i++)
                 {
-                    if (Math.Abs(encodingArray[i].appearance - Math.Round(ukrArray[g].appearance, 3, MidpointRounding.AwayFromZero)) < 0.017)       //    encodingArray[i].appearance == () )
+                    if (b == encodingArray[i].character)
                     {
-                        text = text + ukrArray[g].character;
-                        break;
+                        if (encodingArray[i].character == prob)
+                        {
+                            text = text + " ";
+                            break;
+                        }
+                        for (int g = 0; g < ukrArray.Length; g++)
+                        {
+                            if (Math.Abs(ukrArray[g].appearance - encodingArray[i].appearance) < 0.01)       //    encodingArray[i].appearance == () )
+                            {
+                                text = text + ukrArray[g].character;
+                                break;
+                            }
+
+                        }
                     }
                 }
-
             }
+
             return text;
         }
     }
