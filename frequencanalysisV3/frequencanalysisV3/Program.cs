@@ -178,6 +178,8 @@ namespace frequencanalysisV3
         {
             string text = "";
             byte prob = 32;
+            byte koma = 44;
+            byte tochka = 46;
 
             foreach (byte b in bytesText)
             {
@@ -188,6 +190,16 @@ namespace frequencanalysisV3
                         if (encodingArray[i].character == prob)
                         {
                             text = text + " ";
+                            break;
+                        }
+                        if (encodingArray[i].character == koma)
+                        {
+                            text = text + ",";
+                            break;
+                        }
+                        if (encodingArray[i].character == tochka)
+                        {
+                            text = text + ".";
                             break;
                         }
                         for (int g = 0; g < ukrArray.Length; g++)
